@@ -140,6 +140,10 @@ iframe {
   border-radius: 8px;
 }
 
+
+
+
+
 /* RESPONSIVE STYLES */
 @media screen and (max-width: 1024px) {
   .hero {
@@ -156,7 +160,6 @@ iframe {
   .hero-text p {
     font-size: 15px;
     text-align: center;
-   
   }
 
   nav ul {
@@ -169,7 +172,7 @@ iframe {
     flex-direction: column;
     align-items: center;
     text-align: center;
-     background-color: black;
+    background-color: black;
   }
 
   .logo {
@@ -194,6 +197,7 @@ iframe {
 
   .hero-text {
     margin: 10px;
+    text-align: center;  /* Center text */
   }
 
   .hero-text h1 {
@@ -203,15 +207,19 @@ iframe {
   .hero-text p {
     font-size: 14px;
     width: 100%;
-    margin: 0 20px 20px;
+    margin: 0 auto 20px auto;
   }
 
   .hero-text .btn {
-  margin:auto;
+    display: inline-block; /* Fixes stretching */
     font-size: 14px;
-   display: flex;
-  justify-content: center;
- 
+    padding: 8px 20px;  /* Smaller padding */
+    margin: 0 auto;     /* Center button */
+  }
+
+  .video-box {
+    margin: 20px auto;
+    width: 90%;        /* Make video box centered and smaller */
   }
 
   .video-box h3 {
@@ -223,6 +231,8 @@ iframe {
   }
 
   iframe {
+    display: block;
+    margin: 0 auto;    /* Center iframe */
     height: 250px;
   }
 }
@@ -236,11 +246,20 @@ iframe {
     font-size: 13px;
   }
 
+  .hero-text .btn {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
   .video-box h3 {
     font-size: 20px;
   }
 
   nav ul li a {
     font-size: 15px;
+  }
+
+  iframe {
+    height: 200px;
   }
 }
