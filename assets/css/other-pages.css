@@ -16,81 +16,78 @@ html {
 
 
 /* Header */
+/* Header styling */
 header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem 3%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1000;
+  align-items: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  background-color:silver; /* Example background */
 }
 
+/* Logo styling */
+.logo  {
+  color: #000000;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px ;
+  display: flex;
+  align-items: center;
+}
 
-
-/*PADDED S*/
-#smile{
-    padding: 5px 12px;
-    border-radius: 100%;
-    background-color:#ffffff;
-    color: #000000;
+/* The colored "S" */
+#smile {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 100%;
+  background-color: #000000;
+  color:#3ec1d5;
+  margin-right: 8px;
 }
 
 #smile:hover{
-    background-color:#3ec1d5;
+    background-color:#004d59;
     color: #ffffff;
     cursor: pointer;
-
 }
 
-
-header .logo {
-  font-size: 3rem;
-  color: #fff;
+/* Navigation styling */
+.navbar {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   
+}
+
+/* Navigation links */
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
  
 }
-header .navbar a {
-  margin: 0 2rem;
-  font-size: 1.8rem;
-  color: #fff;
-}
-header .navbar a:hover,
-header .fa-bars:hover {
-  color: #3ec1d5;
-}
-header .fa-bars {
-  font-size: 2.5rem;
-  color: #fff;
-  cursor: pointer;
-  display: none;
+
+.navbar a:hover {
+  color: #02616f;
+  text-decoration: underline;
 }
 
-/* Sections */
-section {
-  padding: 3rem 9%;
+/* Mobile toggle icon */
+header i.fa-bars {
+  display: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
 }
-.heading {
-  text-align: center;
-  margin: 4rem auto;
-  font-size: 3rem;
-  color: #333;
-}
-.heading div {
-  display: inline-block;
-  border-bottom: 2px solid #333;
-  width: 15rem;
-}
-.heading div:hover {
-  width: 25rem;
-}
+
+
 
 
 /* About */
 .about {
   padding: 40px;
-  background-color: #111;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -350,7 +347,7 @@ section {
 
 
 .btn:hover{
-  background-color: black;
+  background-color: rgb(0, 85, 82);
   color: white;
 }
 
@@ -425,27 +422,29 @@ a:hover{
 
 
 /* Media Queries */
-@media (max-width: 850px) {
-  header .fa-bars {
-    display: block;
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 20px; /* Make logo smaller on mobile */
+    justify-content: center;
+    margin: 10px auto;
   }
-  header .navbar {
-    position: fixed;
-    top: -100rem;
-    left: 0;
-    background: rgba(10,10,9,0.9);
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     width: 100%;
-    text-align: center;
+    margin-top: 10px;
   }
-  header .navbar.active {
-    top: 6rem;
+
+  .navbar a {
+    font-size: 16px;
   }
-  header .navbar a {
+
+  header i.fa-bars {
     display: block;
-    font-size: 2.4rem;
-    padding: 1rem;
   }
- 
+}
 
 
   /* about */
