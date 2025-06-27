@@ -156,7 +156,7 @@ iframe {
   .hero-text p {
     font-size: 15px;
     text-align: center;
-    padding: 5px;
+   
   }
 
   nav ul {
@@ -193,7 +193,7 @@ iframe {
   }
 
   .hero-text {
-    margin: 10px 0;
+    margin: 10px;
   }
 
   .hero-text h1 {
@@ -203,7 +203,7 @@ iframe {
   .hero-text p {
     font-size: 14px;
     width: 90%;
-    margin: 0 auto 20px;
+    margin: 0 20px 20px;
   }
 
   .hero-text .btn {
