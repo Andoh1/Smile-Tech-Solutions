@@ -156,6 +156,7 @@ iframe {
   .hero-text p {
     font-size: 15px;
     text-align: center;
+    padding: 5px;
   }
 
   nav ul {
