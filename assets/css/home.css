@@ -213,7 +213,7 @@ iframe {
   .hero-text .btn {
     display: inline-block; /* Fixes stretching */
     font-size: 14px;
-    padding: 8px 20px;  /* Smaller padding */
+    padding: 8px 10px;  /* Smaller padding */
     margin: 0 auto;     /* Center button */
   }
 
