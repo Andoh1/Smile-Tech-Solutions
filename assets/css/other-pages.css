@@ -73,13 +73,7 @@ header {
   text-decoration: underline;
 }
 
-/* Mobile toggle icon */
-header i.fa-bars {
-  display: none;
-  color: #ffffff;
-  font-size: 24px;
-  cursor: pointer;
-}
+
 
 
 
@@ -422,6 +416,7 @@ header i.fa-bars {
 .footer .links a:hover {
   color: #3ec1d5;
 }
+
 
 
 
